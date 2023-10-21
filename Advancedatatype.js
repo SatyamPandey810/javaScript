@@ -381,9 +381,159 @@
 // let array = [10, 20, 30, 40]
 // console.log(Array.isArray(array));
 
-//multidimensional array
+//Iterables
+// string
+// Iterables and array-likes
+
+// let str = "hello world"
+// for (const value of str) {
+//     console.log(value);
+// }
+
+// let array = [10, 30, 40, 50, 60]
+// for (const value of array) {
+//     console.log(value);
+// }
+
+// let object={             //object is not itreables
+//     firstName:"hello world"
+// }
+// for (const value of object) {
+//     console.log(value);
+// }
+
+// Map and Set
+
+// Map
+// new map()-create the map
+// let map = new Map()
+// console.log(map);value
+
+// map.set(key,value)-stores the  by the key
+// map.set(1,"hello world")
+// map.set(1,"hello ")
+// console.log(map);
+
+// map.get(key)-returns the value by the key,undefined
+// map.set(1, 10)
+// map.set(2, 20)
+// map.set(3, 30)
+// map.set(4, 40)
+// console.log(map.get(2));
+
+// map.has(key)-returns true if the key exists
+// map.set(1, 10)
+// map.set(2, 20)
+// map.set(3, 30)
+// map.set(4, 40)
+// console.log(map.has(5));
+
+// map.delete(key)-removes the valueby the key
+// map.set(1, 10)
+// map.set(2, 20)
+// map.set(3, 30)
+// map.set(4, 40)
+// console.log(map.delete(2));
+// console.log(map);
 
 
 
+// map.clear()-remove everything for the map
+// map.set(1, 10)
+// map.set(2, 20)
+// map.set(3, 30)
+// map.set(4, 40)
+// console.log(map.clear());
+// console.log(map);
 
+// map.size -returns the current element count
+// map.set(1, 10)
+// map.set(2, 20)
+// map.set(3, 30)
+// map.set(4, 40)
+// console.log(map.size,map)
+
+// Iteration over map
+// map.keys()-returnd an iterable for keys
+// map.values()-returns an iterable for values
+// map.set(1, 10)
+// map.set(2, 20)
+// map.set(3, 30)
+// map.set(4, 40)
+// console.log(map.keys());
+// for (const value of map.keys()) {
+//     console.log(value);
+// }
+// console.log(map.values());
+
+// for (const value of map.values()) {
+// console.log(value);
+// }
+
+// map.entries()-returns an iterable for entries
+// map.set(1, 10)
+// map.set(2, 20)
+// map.set(3, 30)
+// map.set(4, 40)
+// for (const value of map.entries()) {
+//     console.log(value);
+// }
+
+// Set
+// new Set(iterable)- create the set
+let set = new Set()
+// console.log(set);
+
+// set.add(value)- add a value, returns the set
+// set.add(10)
+// set.add(20)
+// set.add(30)
+// set.add(40)
+// set.add(50)
+// console.log(set);
+
+// set.delete(value)- removes the value,returns true
+// set.add(10)
+// set.add(20)
+// set.add(30)
+// set.add(40)
+// set.add(50)
+// console.log(set.delete(20));
+// console.log(set);
+
+// set.has(value)- returns true if the value exists
+// set.add(10)
+// set.add(20)
+// set.add(30)
+// set.add(40)
+// set.add(50)
+// console.log(set.has(20));
+
+// set.clear()-removes everything from the set
+// set.add(10)
+// set.add(20)
+// set.add(30)
+// set.add(40)
+// set.add(50)
+// console.log(set.clear());
+// console.log(set);
+
+// set.size - is the element count
+// set.add(10)
+// set.add(20)
+// set.add(30)
+// set.add(40)
+// set.add(50)
+// console.log(set.size);
+
+// iteration over set
+set.add(10)
+set.add(20)
+set.add(30)
+set.add(40)
+set.add(50)
+for (const value of set.values()) {
+    console.log(value);
+    
+}
 
