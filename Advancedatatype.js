@@ -361,11 +361,19 @@
 // split and join
 // let array = [10, 20, 30, 40]
 
-// console.log(array.join('|'));
+// let string = array.join('|');
+// console.log(string.split('|'));
 
+// reduce/reduce right
+let array = [10, 20, 30, 40]
+// let a =0
+// for (const value of array) {
+//     a+=value
+// }
 
+// console.log(a);
 
-
-
-
-
+let a = array.reduce((prev, current) => {
+    return prev + current
+}, 0)
+console.log(a);

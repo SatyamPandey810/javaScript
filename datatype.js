@@ -414,7 +414,7 @@
 // testing(20, 30, function (a, b) {
 //     console.log(a + b);
 // })
-let array = [10, 20, 30, 40]
+
 
 
 
