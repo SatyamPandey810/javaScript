@@ -1,1 +1,2 @@
 # javaScript
+author: satyam pandey
