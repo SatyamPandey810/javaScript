@@ -66,8 +66,13 @@ let object = {
     firstName: "hello world",
     setfirstName: function (value) {
         this.firstName = value
+    },
+    set setfirstname(value) {
+        this.firstName = value
     }
 }
 
-object.setfirstName('jhon')
+
+// object.setfirstName('jhon')
+object.setfirstname = 'jhon'
 console.log(object);
