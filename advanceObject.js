@@ -62,17 +62,34 @@
 // object['firstName']="deepak"
 // console.log(object);
 
-let object = {
-    firstName: "hello world",
-    setfirstName: function (value) {
-        this.firstName = value
-    },
-    set setfirstname(value) {
-        this.firstName = value
-    }
-}
+// let object = {
+//     firstName: "hello world",
+//     setfirstName: function (value) {
+//         this.firstName = value
+//     },
+//     set setfirstname(value) {
+//         this.firstName = value
+//     }
+// }
 
 
-// object.setfirstName('jhon')
-object.setfirstname = 'jhon'
-console.log(object);
+// // object.setfirstName('jhon')
+// object.setfirstname = 'jhon'
+// console.log(object);
+
+// getter
+// let object={
+//     firstName:"hello world",
+//     getName:function(){
+//         return this.firstName
+//     },
+//     get firstname(){
+//         return this.firstName
+//     }
+// }
+// console.log(object.firstName);
+// console.log(object["firstName"]);
+
+// console.log(object.getName());
+// console.log(object.firstName);
+
