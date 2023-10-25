@@ -481,7 +481,7 @@
 
 // Set
 // new Set(iterable)- create the set
-let set = new Set()
+// let set = new Set()
 // console.log(set);
 
 // set.add(value)- add a value, returns the set
@@ -527,13 +527,173 @@ let set = new Set()
 // console.log(set.size);
 
 // iteration over set
-set.add(10)
-set.add(20)
-set.add(30)
-set.add(40)
-set.add(50)
-for (const value of set.values()) {
-    console.log(value);
-    
-}
+// set.add(10)
+// set.add(20)
+// set.add(30)
+// set.add(40)
+// set.add(50)
+// for (const value of set.values()) {
+//     console.log(value);
+
+// }
+
+// WeakMap and WeakSet
+// WeakMap
+// let weakMap = new WeakMap()
+// console.log(weakMap);
+
+// let obj = {
+//     name: 1
+// }
+// WeakMap.set(key, value)
+// weakMap.set(obj, 10)
+
+// WeakMap.get(key)
+// console.log(weakMap.get(obj));
+// WeakMap.has(key)
+// console.log(weakMap.has(obj));
+
+// Weakmap.delete(key)
+// console.log(weakMap.delete(obj));
+
+// WeakSet
+// let weakSet=new WeakSet()
+// console.log(weakSet);
+// WeakSet.add(value)
+// console.log(weakSet.add({key:1}));
+
+// WeakSet.has(value)
+// let object={
+//     key:10
+// }
+// weakSet.add(object)
+// console.log(weakSet.has(object));
+// WeakSet.delete(value)
+
+// console.log(weakSet.delete(object));
+
+// Object.keys, values
+// Object.keys(obj)- returns an array of keys
+// Object.values(obj)- returns an array of values
+// Object.entries(obj)-returns an array of [keys,value]
+
+// let obj = {
+//     firstName: "hello world",
+//     lastName: "hello people",
+//     age: 10
+// }
+// console.log(Object.keys(obj));
+// for (const value of Object.keys(obj)) {
+//     console.log(value);
+// }
+
+// console.log(Object.values(obj));
+// for (const value of Object.values(obj)) {
+//   console.log(value);  
+// }
+
+// console.log(Object.entries(obj));
+// for (const value of Object.entries(obj)) {
+//     console.log(`key: ${value[0]}, value:${value[1]}`);
+// }
+
+// Destructuring Asignment
+// array destructuring
+// The rest(...)
+
+// let array = [10, 20, 30, 40, 50, 60]
+// let [a, b, ...c] = array
+// console.log(a, b, c);
+
+// default values
+// Object destructuring
+// The rest pattern "..."
+// Nasted destructuring
+
+// function addition(...nums){
+// // console.log(a+b);
+// let sum=0
+// for (const value of nums) {
+//     sum +=value;
+// }
+// console.log(sum);
+
+// }
+// addition(10,20,30,40,50,80)
+
+// function addition(...nums){
+// let sum=0
+// for (const value of nums) {
+//     sum +=value
+// }
+// console.log(sum);
+// }
+// addition(20,30,50,60)
+
+
+// let array = [10, 20,]
+
+// let [a, b, c=0] = array
+// console.log(a, b, c);
+
+// Object destructuring
+// let object = {
+//     name: {
+//         firstName: "hello world",
+//         lastName: "hello people"
+//     },
+//     age: 10
+// }
+// let { age: Age } = object
+// console.log(Age);
+
+// let {name:{firstName:f}}=object
+// console.log(f);
+
+// let object = {
+//     name: {
+//         firstName: "hello world",
+//         lastName: "hello people"
+//     },
+//     age: 10,
+//     hobbies:['cricket']
+// }
+// let {age,hobbies,...sub}=object
+// console.log(age,hobbies,sub);
+
+// Date and time
+// getFullYear()
+// getMonth()
+// getDate()
+// getHours()
+// getMinutes()
+// getSecond()
+// getMilliSecond()
+// getDay()
+
+
+// let date = new Date()
+// console.log(date.getFullYear());
+// console.log(date.getTime());
+// console.log(date.getDate());
+// console.log(date.getHours());
+// console.log(date.getMinutes());
+// console.log(date.getSeconds());
+// console.log(date.getMilliseconds());
+// console.log(date.getDay());
+
+// JSON method
+// JSON.stringify
+// let object = {
+//     name: "hello world"
+
+// }
+// let a = JSON.stringify(object)
+// console.log(a, typeof a);
+// // JSON.parse
+// let b = JSON.parse(a)
+// console.log(b);
+
+
+
 
