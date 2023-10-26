@@ -119,33 +119,118 @@
 
 // Super
 
-class A {
-    firstName;
-    age = 10
-    constructor(name) {
-        this.firstName = name
-    }
-    getName() {
-        console.log(this.age);
-        return this.name
+// class A {
+//     firstName;
+//     age = 10
+//     constructor(name) {
+//         this.firstName = name
+//     }
+//     getName() {
+//         console.log(this.age);
+//         return this.name
 
-    }
-}
+//     }
+// }
 
-class B extends A {
-    age = 13
-    constructor(name) {
-        super(name)
-    }
-    getName() {
-        console.log(super.age);
-        return this.firstName + "child"
-    }
-}
-let b = new B('hello world')
-console.log(b);
-console.log(b.getName());
+// class B extends A {
+//     age = 13
+//     constructor(name) {
+//         super(name)
+//     }
+//     getName() {
+//         console.log(super.age);
+//         return this.firstName + "child"
+//     }
+// }
+// let b = new B('hello world')
+// console.log(b);
+// console.log(b.getName());
 
 // with the help of super method we can excess the parent class constructor
 // with the help of super object we can excess parent class method
 // we can not excess the parent class properties if we had overrided the parent properties in child class
+
+// static properties and method
+
+// static properties
+// class A {
+//     static firstName = "hello world";
+//     constructor() {
+//         this.firstName
+//     }
+// }
+// let a = new A()
+// console.log(a);
+// let a1 = new A()
+// console.log(a1);
+// console.log(A.firstName);
+
+// static method
+
+// class A {
+//     static firstName = "hello world";
+//     constructor() {
+//         this.firstName
+//     }
+//    static test() {
+
+//         return this.firstName
+//     }
+// }
+// let a = new A()
+// console.log(a);
+
+// console.log(A.test());
+
+
+// inheritance of static properties and method
+
+// class A {
+//     static firstName = "hello world"
+//     static getName() {
+//         return this.firstName
+//     }
+// }
+// console.log(A.firstName);
+// console.log(A.getName());
+
+// Private property 
+// method
+// class A{
+//     firstName="hello world"
+//     #lastName="hello people"
+//     get (){
+//         return this.#lastName
+//     }
+// }
+// let a= new A()
+// console.log(a.get());
+
+// getter
+// class A{
+//     firstName="hello world"
+//     #lastName="hello people"
+//    get getLastname (){
+//         return this.#lastName
+//     }
+// }
+// let a= new A()
+// console.log(a.getLastname);
+
+// private methods
+class A {
+    firstName = "hello world"
+    #lastName = "hello people"
+    #get() {
+        return this.#lastName
+    }
+    getFunc() {
+        return this.#get()
+    }
+}
+let a = new A()
+console.log(a.getFunc());
+
+
+
+
